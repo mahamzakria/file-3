@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Travel</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color:purple;
+            color: #333;
+        }
+        nav {
+            background-color:black;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+        .hero {
+            background-color:rgb(211, 133, 211);
+            padding: 50px 20px;
+            text-align: center;
+        }
+        h1 {
+            color: #007bff;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color:black;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        .featured {
+            padding: 30px 20px;
+            text-align: center;
+        }
+        .destination-card {
+            background-color:skyblue;
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 400px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color:grey;
+            color: #fff;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="destinations.html">Destinations</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <section class="hero">
+        <h1>Welcome to Simple Travel</h1>
+        <p>Explore amazing destinations with us!</p>
+        <a href="destinations.html" class="button">See Destinations</a>
+        <a href="about.html" class="button">Learn About Us</a>
+        <a href="contact.html" class="button">Contact Us</a>
+    </section>
+
+    <section class="featured">
+        <h2>Featured Destination</h2>
+        <div class="destination-card">
+            <h3>Tropical Beach</h3>
+            <p>Relax on the sandy shores and enjoy the clear blue waters.</p>
+            <button onclick="alert('More info coming soon!')">Learn More</button>
+        </div>
+    </section>
+    <script>
+        console.log("Homepage JavaScript loaded.");
+    </script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Destinations</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color:skyblue;
+            color: #333;
+        }
+        .destinations-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+            max-width: 960px;
+            margin: 20px auto;
+        }
+        .destination-item {
+            background-color:white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: black;
+        }
+        .destination-item h3 {
+            color: #007bff;
+            margin-top: 0;
+        }
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color:skyblue;
+            color:black;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <section class="destinations-grid">
+        <div class="destination-item">
+            <h3>Mountain Retreat</h3>
+            <p>Enjoy hiking and stunning views in the majestic mountains.</p>
+            <button onclick="alert('Booking for mountains coming soon!')">Book Now</button>
+        </div>
+        <div class="destination-item">
+            <h3>Coastal Escape</h3>
+            <p>Relax by the sea and soak up the sun.</p>
+            <button onclick="alert('Coastal bookings opening next month!')">Book Now</button>
+        </div>
+        <div class="destination-item">
+            <h3>City Adventure</h3>
+            <p>Explore vibrant cultures and exciting city life.</p>
+            <button onclick="alert('City tours available now!')">Book Now</button>
+        </div>
+        <div class="destination-item">
+            <h3>Forest Camping</h3>
+            <p>Immerse yourself in nature and enjoy a peaceful camping trip.</p>
+            <button onclick="alert('Forest camping details available!')">Learn More</button>
+        </div>
+    </section>
+
+    <script>
+        // Basic JavaScript for potential interactivity (currently just alerts)
+        console.log("Destinations page JavaScript loaded.");
+    </script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .about-content {
+            max-width: 800px;
+            margin: 30px auto;
+            padding: 30px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            line-height: 1.6;
+        }
+        h2 {
+            color: #007bff;
+            margin-top: 0;
+            margin-bottom: 15px;
+        }
+        p {
+            margin-bottom: 15px;
+        }
+        .team-section {
+            margin-top: 30px;
+        }
+        .team-member {
+            border: 1px solid #ddd;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
+        .team-member h3 {
+            color: #28a745;
+            margin-top: 0;
+            margin-bottom: 5px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #333;
+            color: #fff;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <section class="about-content">
+        <h2>Our Story</h2>
+        <p>Welcome to Simple Travel! We started with a passion for making travel accessible and enjoyable for everyone. Our journey began with a small team of travel enthusiasts who wanted to share the beauty and wonder of the world.</p>
+        <p>We believe that travel enriches lives, broadens perspectives, and creates lasting memories. That's why we are dedicated to curating amazing travel experiences and providing helpful resources for our users.</p>
+
+        <h2 class="team-section">Our Team</h2>
+        <div class="team-member">
+            <h3>Mahi </h3>
+            <p>Founder & CEO - Mahi for exploration and technology drives the vision of Simple Travel.</p>
+        </div>
+        <div class="team-member">
+            <h3>Maria </h3>
+            <p>Marketing Manager - Maria ensures that our message reaches those who are eager to explore.</p>
+        </div>
+        <div class="team-member">
+            <h3>Maheen</h3>
+            <p>Travel Consultant - Maheen expertise helps our users find the perfect destinations for their adventures.</p>
+        </div>
+    </section>
+
+    <script>
+        console.log("About Us page JavaScript loaded.");
+    </script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .contact-content {
+            max-width: 600px;
+            margin: 30px auto;
+            padding: 30px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #007bff;
+            margin-top: 0;
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        button[type="submit"] {
+            background-color: #28a745;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button[type="submit"]:hover {
+            background-color: #1e7e34;
+        }
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #333;
+            color: #fff;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <section class="contact-content">
+        <h2>Contact Us</h2>
+        <p>Have questions or need assistance? Feel free to reach out to us!</p>
+        <form>
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit" onclick="alert('Message sent (not really)!')">Send Message</button>
+        </form>
+    </section>
+
+
+    <script>
+        console.log("Contact page JavaScript loaded.");
+    </script>
+</body>
+</html>
